@@ -136,8 +136,7 @@ hr{
 }
 .box{
     width: 30%;
-    height: 250px;
-    padding: 10px;
+    height: 255px;
 }
 .in{
     background-color:#1e1e1e;
@@ -146,10 +145,10 @@ hr{
     margin: 10px;
     padding: 2px;
     width: 90%;
-    height: 75px;
+    height: 80px;
 }
 .box1{
-     width: 50%;
+     width: 45%;
     height: 250px;
 }
 .h5{
@@ -170,7 +169,9 @@ input{
     margin: 7px; 
     margin-top: 10px;
     background-color:#1e1e1e;
+    color: white;
     border-radius: 10px ;
+    padding-left: 10px;
 }
 .ab{
    padding-bottom :5rem;
@@ -181,12 +182,18 @@ input{
     background-color: #00ff88;
    border-radius: 50px;
     width: 80%;
-    height: 30px;
+    height: 40px;
     border: 0px;
     font-size: 15px;
     font-weight: bold;
-    padding: 10px;
+    
     margin-top: 10px;
+}
+.btn1:hover{
+    background-color:#055c33;
+    color:aliceblue;
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 
