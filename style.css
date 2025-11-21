@@ -1,13 +1,35 @@
 body{
     background-color: #0f0f0f;
     font-family:  Calibri,  sans-serif;
+    /* cursor: none; */
+    overflow-x: hidden;
+}
+.cursor{
+    width: 30px;
+    height: 30px;
+    border: 2px solid #00ff88;
+    border-radius: 50%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transition: width 3.0s ease, height 0.3s ease, border-width 0.3s ease;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px #00ff88, 0 0 40px #00ff88;
+    z-index: 100000;
+    pointer-events: none;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 header{
     background-color: black;
     height: 50px;
+    width: 100%;
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0px;
 }
 .logo{
     color: #00ff88;
@@ -195,7 +217,20 @@ input{
     transform: scale(1.1);
     transition: 0.3s;
 }
+.a1{
+    color: white;
+    text-decoration: none;
+}
+.s1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.s2{
+    padding-top: 50px;
+}
+.s3{
 
+}
 
 
 

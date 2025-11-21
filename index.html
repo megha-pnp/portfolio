@@ -8,15 +8,16 @@
 </head>
 
 <body>
+    <div class="cursor"> </div>
     <header>
         <div class="logo"> Megha </div>
 
         <div class="nav">
-            <li>Home</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Testimonials</li>
-            <li>Contact</li>
+            <li> <a href="#home" class="a1"> Home </a> </li>
+            <li> <a href="#skills" class="a1"> Skills </a></li>
+            <li><a href="" class="a1"> Projects </a></li>
+            <li> <a href="" class="a1"> Testimonials </a></li>
+            <li> <a href="" class="a1"> Contact </a></li>
         </div>
 
         <div class="icons">
@@ -27,7 +28,7 @@
         </div>
     </header>
 
-    <section style="display: flex;">
+    <section style="display: flex;" id="home" class="s1">
         <div class="block1">
         <h1 class="name"> Hi, I'm <span style="color:#00ff88 ;">Megha</span></h1>
         <div class="developer"> Full Stack Developer  </div>
@@ -44,7 +45,8 @@
             <img class="image" src="anime.jpg" alt="">
         </div>
     </section>
-    <section>
+
+    <section id="skills" class="s2">
         <div> 
             <h2 class="skill"> My Skills</h2> <hr>
         </div>
@@ -66,36 +68,9 @@
         </div>
     </section>
 
-
-    <section>
+    <section class="s3">
         <h2 class="skill"> GET IN TOUCH </h2> <hr>
         <p class="info"> Have a project in mind? Let's collaborate and bring your ideas to life!</p>
-
-
-        <!-- <div class="block">
-            <div class="block11">
-                 <div class="inner"> 
-            <h5 class="h5"> Email </h5> 
-            <p class="p"> meghakathuriaofficial@gmail.com</p>
-        </div>
-        <div class="inner"> 
-           <h5 class="h5"> Available For </h5>
-            <p class="p"> Freelance Projects </p>
-        </div>
-        <div class="inner"> 
-          <h5 class="h5"> Location </h5>  
-           <p class="p"> Remote </p>
-        </div>
-            </div>
-            <div class="block12">
-                 <div class="input"> <input  type="text" placeholder="Your Name"> </div>
-       <div class="input"> <input type="text" placeholder="your.email@example.com"></div> 
-       <div class="input"> <input  type="text" placeholder="Project Subject"></div> 
-       <div class="input"> <input   type="text" placeholder="Tell me about your project"></div> 
-    
-            </div>
-        </div> -->
-
 
   <div class="container"> 
         <div class="box">
@@ -111,8 +86,6 @@
                 <h5 class="h5"> Location  </h5>
                 <p class="ph">Remote </p>
             </div>
-            
-            
         </div>
 
         <div class="box1">
@@ -132,10 +105,8 @@
             
         </div>
   </div>
-
-
-
     </section>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>
