@@ -21,7 +21,9 @@ body{
 html{
     scroll-behavior: smooth;
 }
-
+a{
+     text-decoration: none;
+}
 header{
     background-color: black;
     height: 50px;
@@ -101,14 +103,22 @@ align-content: center;
     width: 250px;
     margin-left: 20px;
     margin-top: 10px;
-
 }
+/* .btn:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgb(0 255 87 / 60%);
+} */
 .image{
     margin-right: 30px;
     margin-top: 30px;
     height: auto;
     border-radius: 50%;
     box-shadow: #00ff88 0px 0px 15px;
+}
+.image:hover{
+     transform: scale(1.05);
+     transition: transform 0.3s ease;
 }
 .block1{
     width: 60%;
@@ -154,6 +164,7 @@ hr{
     display: flex;
     gap:10px;
     justify-content: center;
+    height: 25rem;
 
 }
 .box{
@@ -202,18 +213,19 @@ input{
 .btn1{
     color: black;
     background-color: #00ff88;
-   border-radius: 50px;
-    width: 80%;
+    border-radius: 50px;
+    width: 70%;
     height: 40px;
     border: 0px;
     font-size: 15px;
     font-weight: bold;
-    
     margin-top: 10px;
+    margin-left: 50px;
 }
 .btn1:hover{
-    background-color:#055c33;
-    color:aliceblue;
+    background-color:black;
+    color:#00ff88;
+    border: 2px solid #00ff88;
     transform: scale(1.1);
     transition: 0.3s;
 }
@@ -228,15 +240,66 @@ input{
 .s2{
     padding-top: 50px;
 }
-.s3{
+/* .s3{
 
+} */
+ .foot{
+     height: 180px;
+     display: flex;
+     gap: 20px;
+}
+ .aboutMe{
+    width: 33%;
+    height: 170px;
+ }
+ .quickLinks{
+     width: 33%;
+     height: 170px;
+ }
+.connect{
+     width: 33%;
+     height: 170px;
 }
 
-
-
-
-
-
+.me{
+    color: #00ff88;
+    font-size: 35px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 4px #00ff88;
+}
+.mypara{
+    margin-left: 20px;
+    color:#f5f5f5;
+       
+}
+.quick{
+    font-size: 35px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+.qlink{
+    text-decoration: none;
+     margin-left: 20px;
+     color:#f5f5f5;
+     padding: 10px;
+}
+.con{
+    font-size: 35px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+.conIcon{
+    color:#f5f5f5;
+    margin: 10px;
+}
+.copyright{
+    color: whitesmoke;
+    margin-left: 20px;
+    font-size: 15px;
+}
 
 
 
