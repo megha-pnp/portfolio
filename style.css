@@ -152,6 +152,83 @@ align-content: center;
     width: 60%;
     margin-top: 50px;
 }
+.abt{
+    color: white;
+    font-size:4.2rem;
+     font-family:  Calibri;
+     text-align: center ;
+     margin-bottom: 5px;
+}
+.abt1{
+    color: white;
+    font-size: 2.5rem;
+    margin-left: 8rem;
+    margin-bottom: 5px;
+}
+.aboutDiv{
+    /* background-color:red; */
+    display: flex;
+    /* height: 25rem; */
+}
+.data{
+    color:rgba(240, 255, 255, 0.859);
+    margin-left: 20px;
+    font-size: 18px;
+}
+.personal{
+    /* background-color: maroon; */
+    width: 40%;
+    height: 20rem;
+    margin-left: 8rem;
+    display: flex;
+}
+.cvbtn{
+    border: 2px solid #00ff88;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    margin-left: 10rem;
+}
+.personal1{
+    display:flex;
+    width: 40%;
+    height: 20rem;
+    margin-left: 2rem;
+    /* background-color: aquamarine; */
+    
+}
+
+.p1{
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    padding-right: 20px;
+   
+}
+.achive{
+    color: #00ff88;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.achive1{
+    margin-left: 40px;
+    margin-top:1px;
+    color: white;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
 
 .Myskill{
     color: #f5f5f5;
