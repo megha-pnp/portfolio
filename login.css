@@ -1,0 +1,48 @@
+body{
+    font-family: calibri;
+}
+.loginHead{
+    background: linear-gradient(to right, rgba(180, 13, 247, 0.555), rgba(218, 38, 122, 0.603));
+    padding: 20px;
+    justify-items: center;
+}
+.login{
+    background: linear-gradient(to right, rgba(135, 63, 228, 0.774), rgba(218, 38, 122, 0.74));
+    width: 20%;
+    height: 27rem;
+    border-radius: 20px;
+    padding: 10px;
+    /* margin-left: 30rem;
+    margin-top: 5rem; */
+    align-content: center;
+
+    /* justify-items: center; */
+}
+
+.login h1{
+    color: white;
+    text-align: center;
+}
+.login p{
+    color: white;
+    padding-left: 18px;
+}
+.login input{
+    width: 90%;
+    margin-bottom: 45px;
+    border: none;
+    border-bottom: 2px solid white ;
+    background: none;
+}
+.login h4{
+    color: white;  
+    padding-left: 20px;
+}
+.login button{
+    width: 70%;
+    height: 27px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0px;
+    margin-left: 25px;
+}
