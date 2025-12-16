@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Megha </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -18,6 +19,7 @@
             <li> <a href="#skills" class="a1"> Skills </a></li>
             <li><a href="#projects" class="a1"> Projects </a></li>
             <li> <a href="#getTouch" class="a1"> Contact </a></li>
+            <li> <a href="admin.html" class="a1"> Admin </a></li>
         </div>
 
         <div class="icons">
@@ -30,9 +32,9 @@
 
     <section style="display: flex;" id="home" class="s1">
         <div class="block1">
-            <h1 class="name"> Hi, I'm <span style="color:#00ff88 ;">Megha</span></h1>
-            <div class="developer"> Full Stack Developer </div>
-            <p class="para">I specialize in building exceptional digital experiences using cutting-edge
+            <h1 id="homeTitle" class="name"> Hi, I'm <span style="color:#00ff88 ;">Megha</span></h1>
+            <div id="homeSubtitle" class="developer"> Full Stack Developer </div>
+            <p id="homePara" class="para">I specialize in building exceptional digital experiences using cutting-edge
                 technologies.With expertise in React, Node.js, and modern JavaScript frameworks, I transform complex
                 ideas into elegant, performant solutions. Passionate about clean code, best practices, and creating
                 impactful user experiences.</p>
@@ -50,10 +52,10 @@
     </section>
 
     <section class="about" id="aboutSection">
-        <h2 class="abt">About Me</h2>
+        <h2 id="aboutHeading" class="abt">About Me</h2>
         <hr>
         <h3 class="abt1"> PERSONAL INFO </h3>
-        <div class="aboutDiv">
+        <div id="aboutPersonal" class="aboutDiv">
             <div class="personal">
                 <div>
                     <h5 class="data">First Name: <span style="color:white;">Megha</span></h5>
@@ -125,10 +127,10 @@
 
     <section id="skills" class="s2" style="margin-bottom: 5rem;">
         <div>
-            <h2 class="Myskill"> My Skills</h2>
+            <h2 id="skillsHeading" class="Myskill"> My Skills</h2>
             <hr>
         </div>
-        <div>
+        <div id="skillsList">
             <div class="all">
                 <div class="skills">HTML5
                     <h6 class="h6"> Semantic markup and modern web standards</h6>
@@ -157,9 +159,9 @@
     </section>
 
     <section class="project" id="projects">
-        <h2 class="Myskill"> Projects</h2>
+        <h2 id="projectsHeading" class="Myskill"> Projects</h2>
         <hr>
-        <div class="projectdiv">
+        <div id="projectsList" class="projectdiv">
             <div class="b1"> Personal <br> Portfolio</div>
             <div class="b1"> Library <br> Management</div>
             <div class="b1"> To-do <br> List</div>
@@ -167,15 +169,15 @@
 
     </section>
     <section class="contact" id="getTouch">
-        <h2 class="Myskill"> GET IN TOUCH </h2>
+        <h2 id="contactHeading" class="Myskill"> GET IN TOUCH </h2>
         <hr>
-        <p class="info"> Have a project in mind? Let's collaborate and bring your ideas to life!</p>
+        <p id="contactInfo" class="info"> Have a project in mind? Let's collaborate and bring your ideas to life!</p>
 
         <div class="container" >
             <div class="box">
                 <div class="in">
                     <h5 class="h5"> Email </h5>
-                    <p class="ph"> meghakathuriaofficial@gmail.com </p>
+                    <p id="contactEmail" class="ph"> meghakathuriaofficial@gmail.com </p>
                 </div>
                 <div class="in">
                     <h5 class="h5"> Available For </h5>
@@ -206,6 +208,7 @@
     </section>
 
     <!-- <script src="script.js"></script> -->
+    <script src="data-loader.js"></script>
 
     <footer>
         <div class="foot">

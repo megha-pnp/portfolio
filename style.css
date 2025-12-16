@@ -452,6 +452,36 @@ input:focus{
 .contact{
     padding: 20px;
 }
+
+/* Responsive adjustments for smaller screens */
+@media (max-width:900px){
+    header{height:auto;padding:8px}
+    .nav{padding-left:1rem;padding-right:1rem;gap:1rem}
+    .name{font-size:2rem;margin-top:5rem}
+    .developer{font-size:16px}
+    .para{width:100%;font-size:16px}
+    .block2{width:100%;height:auto;margin-right:0;border-radius:10px}
+    .block1{width:100%}
+    .colHead{flex-wrap:wrap}
+    .aboutDiv{flex-direction:column}
+    .personal{width:100%;margin-left:0}
+    .personal1{width:100%;margin-left:0}
+    .container{flex-direction:column;align-items:center}
+    .box,.box1{width:90%}
+    .projectdiv{flex-direction:column;margin-left:1rem}
+    .b1{width:90%;margin:10px}
+    section{height:auto;padding-bottom:2rem}
+}
+
+@media (max-width:480px){
+    .logo{font-size:18px}
+    .nav{display:none}
+    header{justify-content:space-between;padding:10px}
+    .icons{display:flex;gap:6px}
+    .name{font-size:1.6rem;margin-top:4.5rem}
+    .para{font-size:15px}
+    .skills .skills{font-size:20px;width:100%}
+}
  .foot{
      height: 40vh;
      display: flex;

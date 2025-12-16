@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Admin Panel — Megha</title>
+	<link rel="stylesheet" href="admin.css">
+	<style>/* quick fallback if admin.css missing */</style>
+</head>
+<body>
+	<!-- Left sliding sidebar: section names -->
+	<aside id="leftSidebar" class="sidebar left">
+		<header>
+			<h3 id="leftTitle">Sections</h3>
+			<button id="closeLeft" class="close" aria-label="Close">×</button>
+		</header>
+		<nav>
+			<ul>
+				<li><button class="nav-btn" data-section="home">Home</button></li>
+				<li><button class="nav-btn" data-section="about">About</button></li>
+				<li><button class="nav-btn" data-section="skills">Skills</button></li>
+				<li><button class="nav-btn" data-section="projects">Projects</button></li>
+				<li><button class="nav-btn" data-section="contact">Contact</button></li>
+			</ul>
+		</nav>
+	</aside>
+
+	<!-- Right sliding sidebar: details/editor for selected section -->
+	<aside id="rightSidebar" class="sidebar right">
+		<header>
+			<h3 id="rightTitle">Edit Section</h3>
+			<button id="closeRight" class="close" aria-label="Close">×</button>
+		</header>
+		<div class="editor" id="editor">
+			<!-- forms will be injected here -->
+		</div>
+		<div class="actions">
+			<button id="saveBtn" class="primary">Save</button>
+			<button id="resetBtn">Reset</button>
+		</div>
+	</aside>
+
+	<!-- Open buttons -->
+	<button id="openLeft" class="open left">☰</button>
+	<button id="openRight" class="open right">✎</button>
+
+	<main class="main">
+		<header>
+			<h1>Admin Panel</h1>
+			<p>Edit site sections and click Save to persist changes in your browser (localStorage).</p>
+		</header>
+
+		<section class="preview">
+			<h2>Preview</h2>
+			<iframe id="previewFrame" src="dashboard.html"></iframe>
+		</section>
+	</main>
+
+	<script src="admin.js"></script>
+</body>
+</html>
