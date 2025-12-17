@@ -1,0 +1,60 @@
+body{
+    font-family: calibri;
+}
+.loginHead{
+    background: linear-gradient(to right, rgba(180, 13, 247, 0.555), rgba(218, 38, 122, 0.603));
+    padding: 20px;
+    height: 600px;
+    justify-items: center;
+    align-content: center;
+}
+.login{
+    background: linear-gradient(to right, rgba(135, 63, 228, 0.774), rgba(218, 38, 122, 0.74));
+    width: 20%;
+    height: 27rem;
+    border-radius: 20px;
+    padding: 10px;
+    align-content: center;
+    font-size: 18px;
+}
+
+.login h1{
+    color: white;
+    text-align: center;
+}
+.login p{
+    color: white;
+    padding-left: 18px;
+}
+.login p input{
+    width: 90%;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid white ;
+    background: none;
+}
+.login div h4{
+    color: white;  
+    padding-left: 10px;
+   
+}
+.login div input{
+  cursor: pointer;
+   
+}
+.login a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.login button{
+    width: 70%;
+    height: 27px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0px;
+    margin-left: 25px;
+    margin-top: 10px;
+    
+}
