@@ -14,3 +14,23 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+---
+
+# Project (migrated)
+
+This repository has been migrated from a static portfolio into a React application under `client/`.
+
+Quick start:
+
+- cd client
+- npm install
+- npm run dev
+
+Testing
+- npm test — run the test suite (Vitest + Testing Library)
+- npm test:watch — tests in watch mode
+
+Notes
+- The original `admin.html` and `dashboard.html` are available in `client/public/` so the legacy admin preview still works.
+- React routes: `/` (Home), `/login` (Login), `/admin` (React Admin editor; protected — login with `admin`/`admin`).

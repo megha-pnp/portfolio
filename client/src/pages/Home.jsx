@@ -13,18 +13,6 @@ export default function Home(){
 
   return (
     <div>
-      <header className="main-header">
-        <div className="logo">Megha</div>
-        <nav className="nav">
-          <li><a href="#home" className="a1">Home</a></li>
-          <li><a href="#aboutSection" className="a1">About</a></li>
-          <li><a href="#skills" className="a1">Skills</a></li>
-          <li><a href="#projects" className="a1">Projects</a></li>
-          <li><a href="#getTouch" className="a1">Contact</a></li>
-          <li><a href="/admin.html" className="a1">Admin</a></li>
-        </nav>
-      </header>
-
       <section id="home" className="s1" style={{display: 'flex'}}>
         <div className="block1">
           <h1 id="homeTitle" className="name" dangerouslySetInnerHTML={{__html: home.title}} />

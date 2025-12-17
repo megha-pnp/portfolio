@@ -3,11 +3,12 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: rgb(39, 39, 39);
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 20px;
+  padding-top: 12px;
   will-change: filter;
   transition: filter 300ms;
 }

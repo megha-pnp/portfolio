@@ -3,7 +3,6 @@ body{
     font-family:  Calibri,  sans-serif;
     /* cursor: none; */
     overflow-x: hidden;
-    padding-top: 55px; /* reserve space for fixed header */
 }
 section{
      height: 100vh;
@@ -35,17 +34,14 @@ header{
     height: 55px;
     width: 100%;
     display: flex;
-    justify-content: center; /* keeps nav centered */
+    justify-content: center;
     position: fixed;
     top: 0px;
-    z-index: 999;
 }
 .logo{
     color: #00ff88;
     align-content: center;
     font-size: 20px;
-    position: absolute;
-    left: 1rem;
 }
 .nav{
     display: flex;
@@ -57,13 +53,9 @@ header{
     padding-right: 10rem;
     padding-left: 10rem;
 }
-.nav li{ list-style: none; display: inline-block; }
 .icons{
-    display:flex;
-    gap:8px;
-    align-items:center;
-    position: absolute;
-    right: 1rem;
+       /* text-align:right; */
+       align-content: center; 
 }
 .i1{
    color:#f5f5f5;
@@ -84,7 +76,7 @@ header{
     color: #f5f5f5;
     font-size: 3rem;
     font-family:  Calibri;
-    margin-top: 1rem; /* reduced to fit below header */
+    margin-top: 5rem;
     margin-bottom: 25px;
     margin-left: 10px;
 }
@@ -168,7 +160,7 @@ align-content: center;
 }
 .about{
     background-color: #1e1e1e;
-    height: 38rem;
+    height: 48rem;
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 20px;
@@ -190,13 +182,13 @@ align-content: center;
 .abt1{
     color: white;
     font-size: 2.5rem;
-    margin-left: 8rem;
+    margin-right: 16em;
     margin-bottom: 5px;
 }
 .aboutDiv{
     /* background-color:red; */
     display: flex;
-    /* height: 25rem; */
+    height: 28rem;
 }
 .data{
     color:rgba(240, 255, 255, 0.859);
@@ -205,9 +197,9 @@ align-content: center;
 }
 .personal{
     /* background-color: maroon; */
-    width: 40%;
+    width: 55%;
     height: 20rem;
-    margin-left: 8rem;
+    margin-left: 20px;
     display: flex;
 }
 .cvbtn{
@@ -217,14 +209,14 @@ align-content: center;
     color: white;
     padding: 10px;
     font-size: 15px;
-    margin-left: 10rem;
+    margin-right: 40em;
     cursor: pointer;
 }
 .personal1{
     display:flex;
     width: 40%;
     height: 20rem;
-    margin-left: 2rem;
+    margin-left: 20px;
     /* background-color: aquamarine; */
     
 }
@@ -406,7 +398,7 @@ input:focus{
     
 }
 .s1{
-    margin-top: 10px; /* lower spacing since body has header padding */
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 .s2{
