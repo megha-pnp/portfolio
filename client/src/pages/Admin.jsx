@@ -18,6 +18,11 @@ export default function Admin(){
     setSiteData(next)
   }
 
+  const logout = ()=>{
+    localStorage.removeItem('isLoggedIn')
+    window.location.href = '/login'
+  }
+
   return (
     <div style={{display:'flex',gap:20}}>
       <aside style={{width:280,background:'#111',color:'#fff',padding:16,borderRadius:8}}>
@@ -31,50 +36,58 @@ export default function Admin(){
         </ul>
       </aside>
       <div style={{flex:1}}>
-        <h2>Edit: {selected}</h2>
+        <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:8}}>
+          <h2>Edit: {selected}</h2>
+          <div style={{display:'flex',gap:8}}>
+            <button onClick={()=>{ localStorage.setItem('siteData', JSON.stringify(siteData)); alert('Saved ✔') }} className="primary">Save</button>
+            <button onClick={()=>{ if(!confirm('Reset stored data to defaults?')) return; localStorage.removeItem('siteData'); window.location.reload() }}>Reset</button>
+            <button onClick={logout} style={{background:'#ff5c5c',color:'#fff',border:0,padding:'6px 10px',borderRadius:6}}>Logout</button>
+          </div>
+        </div>
+
         <div style={{background:'#fff',padding:16,borderRadius:8}}>
           {selected==='home' && (
             <div>
-              <label>Title (HTML allowed)</label>
-              <input value={sec.title||''} onChange={e=>updateField('title',e.target.value)} style={{width:'100%'}} />
-              <label>Subtitle</label>
-              <input value={sec.subtitle||''} onChange={e=>updateField('subtitle',e.target.value)} style={{width:'100%'}} />
-              <label>Paragraph</label>
-              <textarea value={sec.para||''} onChange={e=>updateField('para',e.target.value)} style={{width:'100%'}} />
+              <label htmlFor="title">Title (HTML allowed)</label>
+              <input id="title" value={sec.title||''} onChange={e=>updateField('title',e.target.value)} style={{width:'100%'}} />
+              <label htmlFor="subtitle">Subtitle</label>
+              <input id="subtitle" value={sec.subtitle||''} onChange={e=>updateField('subtitle',e.target.value)} style={{width:'100%'}} />
+              <label htmlFor="para">Paragraph</label>
+              <textarea id="para" value={sec.para||''} onChange={e=>updateField('para',e.target.value)} style={{width:'100%'}} />
             </div>
           )}
           {selected==='about' && (
             <div>
-              <label>Heading</label>
-              <input value={sec.heading||''} onChange={e=>updateField('heading',e.target.value)} style={{width:'100%'}} />
-              <label>Personal (plain text, newline separated)</label>
-              <textarea value={sec.personal||''} onChange={e=>updateField('personal',e.target.value)} style={{width:'100%'}} />
+              <label htmlFor="heading">Heading</label>
+              <input id="heading" value={sec.heading||''} onChange={e=>updateField('heading',e.target.value)} style={{width:'100%'}} />
+              <label htmlFor="personal">Personal (plain text, newline separated)</label>
+              <textarea id="personal" value={sec.personal||''} onChange={e=>updateField('personal',e.target.value)} style={{width:'100%'}} />
             </div>
           )}
           {selected==='skills' && (
             <div>
-              <label>Heading</label>
-              <input value={sec.heading||''} onChange={e=>updateField('heading',e.target.value)} style={{width:'100%'}} />
-              <label>Skills (comma separated)</label>
-              <input value={sec.skillsList||''} onChange={e=>updateField('skillsList',e.target.value)} style={{width:'100%'}} />
+              <label htmlFor="heading">Heading</label>
+              <input id="heading" value={sec.heading||''} onChange={e=>updateField('heading',e.target.value)} style={{width:'100%'}} />
+              <label htmlFor="skillsList">Skills (comma separated)</label>
+              <input id="skillsList" value={sec.skillsList||''} onChange={e=>updateField('skillsList',e.target.value)} style={{width:'100%'}} />
             </div>
           )}
           {selected==='projects' && (
             <div>
-              <label>Heading</label>
-              <input value={sec.heading||''} onChange={e=>updateField('heading',e.target.value)} style={{width:'100%'}} />
-              <label>Projects (comma separated)</label>
-              <input value={sec.list||''} onChange={e=>updateField('list',e.target.value)} style={{width:'100%'}} />
+              <label htmlFor="heading">Heading</label>
+              <input id="heading" value={sec.heading||''} onChange={e=>updateField('heading',e.target.value)} style={{width:'100%'}} />
+              <label htmlFor="list">Projects (comma separated)</label>
+              <input id="list" value={sec.list||''} onChange={e=>updateField('list',e.target.value)} style={{width:'100%'}} />
             </div>
           )}
           {selected==='contact' && (
             <div>
-              <label>Heading</label>
-              <input value={sec.heading||''} onChange={e=>updateField('heading',e.target.value)} style={{width:'100%'}} />
-              <label>Info</label>
-              <textarea value={sec.info||''} onChange={e=>updateField('info',e.target.value)} style={{width:'100%'}} />
-              <label>Email</label>
-              <input value={sec.email||''} onChange={e=>updateField('email',e.target.value)} style={{width:'100%'}} />
+              <label htmlFor="heading">Heading</label>
+              <input id="heading" value={sec.heading||''} onChange={e=>updateField('heading',e.target.value)} style={{width:'100%'}} />
+              <label htmlFor="info">Info</label>
+              <textarea id="info" value={sec.info||''} onChange={e=>updateField('info',e.target.value)} style={{width:'100%'}} />
+              <label htmlFor="email">Email</label>
+              <input id="email" value={sec.email||''} onChange={e=>updateField('email',e.target.value)} style={{width:'100%'}} />
             </div>
           )}
 
